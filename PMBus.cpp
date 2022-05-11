@@ -74,20 +74,22 @@ float PMBus::temp_request(){
     return temp = lin11_to_dec(data_request(127, 0x8D, 2));
 }
 
-float PMBus::current_in_request(){
+/*float PMBus::current_in_request(){
     float i_in = 0;
     return i_in = lin11_to_dec(data_request(127, 0x89, 2));
 }
+*/
 
 float PMBus::current_out_request(){
     float i_out = 0;
     return i_out = lin11_to_dec(data_request(127, 0x8C, 2));
 }
 
-float PMBus::power_in_request(){
+/*float PMBus::power_in_request(){
     float p_in = 0;
     return p_in = lin11_to_dec(data_request(127, 0x97, 2));
 }
+*/
 
 float PMBus::power_out_request(){
     float p_out = 0;
