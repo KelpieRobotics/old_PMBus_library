@@ -1,7 +1,7 @@
 /*
   PMBus.cpp - Library for getting values over the PMBus protocol for a Murata DCE0133V2.
   Created by Mohamad Ali Jarkas, May 11, 2022.
-  Documented by Juan Hiedra Primera, Octobe 1, 2022.
+  Documented by Juan Hiedra Primera, October 1, 2022.
 */
 
 #include "Arduino.h"
@@ -150,7 +150,7 @@ float PMBus::power_out_request(){
     return p_out = lin11_to_dec(data_request(127, 0x96, 2));
 }
 
-// DEPRECATED
+// DEPRECATED - Not supported on DCE0133V2. 
 
 //float PMBus::current_in_request(){
 //    float i_in = 0;
