@@ -1,6 +1,6 @@
 #include "PMBus.h"
 
-PMBus object;
+PMBus object(127);
 
 void setup() {
   Serial.begin(9600); 
